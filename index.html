@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Speech Generation Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <h1>CosyVoice 3: Towards In-the-wild Speech Generation</h1>
+  <p class="authors">FunAudioLLM Team · SpeechLab@Tongyi</p>
+  <p class="links"><a href="#">[Paper]</a></p>
+
+  <div class="card">
+    <h2>Contents</h2>
+    <ul>
+      <li><a href="#zero-shot">Zero-shot In-context Generation</a></li>
+      <li><a href="#mixed">Mixed-lingual In-context Generation</a></li>
+    </ul>
+  </div>
+
+  <!-- Zero-shot -->
+  <div class="card" id="zero-shot">
+    <h2>Zero-shot In-context Generation</h2>
+    <table class="demo-table">
+      <thead>
+        <tr>
+          <th>Language</th>
+          <th>Prompt</th>
+          <th>Text</th>
+          <th>CosyVoice 2.0</th>
+          <th>CosyVoice 3.0-0.5B</th>
+          <th>CosyVoice 3.0-1.5B</th>
+        </tr>
+      </thead>
+      <tbody id="zero-shot-body"></tbody>
+    </table>
+  </div>
+
+  <!-- Mixed-lingual -->
+  <div class="card" id="mixed">
+    <h2>Mixed-lingual In-context Generation</h2>
+    <table class="demo-table">
+      <thead>
+        <tr>
+          <th>Prompt</th>
+          <th>Text</th>
+          <th>CosyVoice 2.0</th>
+          <th>CosyVoice 3.0-0.5B</th>
+          <th>CosyVoice 3.0-1.5B</th>
+        </tr>
+      </thead>
+      <tbody id="mixed-body"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="data.js"></script>
+</body>
+</html>
